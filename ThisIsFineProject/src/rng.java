@@ -23,6 +23,14 @@ public class rng
 	}
 	
 	/**
+	 * Returns the total number of numbers in the array.
+	 * @return the total number of numbers in the array.
+	 */
+	public int dice() {
+		return rolled.length;
+	}
+	
+	/**
 	 * Returns the array of random numbers as an integer array.
 	 * @return the array of random numbers as an integer array.
 	 */
@@ -36,28 +44,6 @@ public class rng
 	 */
 	@Override
 	public String toString() {
-		String output = rolled[0] + " " + rolled[1] + " " + rolled[2]
-				+ " " + rolled[3] + " " + rolled[4] + " " + rolled[5] + "\n";
-		return output;
-	}
-	
-	/**
-	 * Rolls another new set of numbers and populates the array
-	 * before returning the new array.
-	 * @return a newly populated random number array.
-	 */
-	public int[] rollArray() {
-		roll();
-		return this.rolled;
-	}
-	
-	/**
-	 * Rolls another new set of numbers and populates the array
-	 * before returning the contents as a formatted String.
-	 * @return a formatted String of new random numbers.
-	 */
-	public String rollString() {
-		roll();
 		String output = rolled[0] + " " + rolled[1] + " " + rolled[2]
 				+ " " + rolled[3] + " " + rolled[4] + " " + rolled[5] + "\n";
 		return output;

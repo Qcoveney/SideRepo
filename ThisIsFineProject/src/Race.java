@@ -11,9 +11,9 @@ public class Race {
 	 * Default constructor.
 	 */
 	public Race() {
-		race = "";
-		abilityScoreMod = "";
-		size = "";
+		race = "none";
+		abilityScoreMod = "0";
+		size = "none";
 		speed = 0;
 		darkvision = false;
 		specialTrait = "nothing yet";
@@ -68,7 +68,7 @@ public class Race {
 		size = "Medium";
 		speed = 30;
 		darkvision = false;
-		specialTrait = "None";
+		specialTrait = "None\n";
 	}
 	
 	public String toString()  {
