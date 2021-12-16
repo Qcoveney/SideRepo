@@ -1,3 +1,4 @@
+
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
@@ -16,6 +17,7 @@ class ProjectTestCases {
 		Assert.assertEquals(expected, actual);
 	}
 	
+	@SuppressWarnings("deprecation")
 	@Test
 	void testRngRoll() {
 		rng random = new rng();
@@ -31,6 +33,7 @@ class ProjectTestCases {
 		Assert.assertEquals(expected, actual);
 	}
 	
+	@SuppressWarnings("deprecation")
 	@Test
 	void testRngToArray() {
 		rng random = new rng();
@@ -41,6 +44,7 @@ class ProjectTestCases {
 		Assert.assertEquals(expected, actual);
 	}
 	
+	@SuppressWarnings("deprecation")
 	@Test
 	void testRngToString() {
 		rng random = new rng();
@@ -50,6 +54,7 @@ class ProjectTestCases {
 	}
 	
 	// Tests for the Races class.
+	@SuppressWarnings("deprecation")
 	@Test
 	void testRace() {
 		Race race = new Race();
@@ -59,6 +64,7 @@ class ProjectTestCases {
 		Assert.assertEquals(expected, actual);
 	}
 	
+	@SuppressWarnings("deprecation")
 	@Test
 	void testRaceDwarf() {
 		Race race = new Race();
@@ -71,6 +77,7 @@ class ProjectTestCases {
 		Assert.assertEquals(expected, actual);
 	}
 	
+	@SuppressWarnings("deprecation")
 	@Test
 	void testRaceElf() {
 		Race race = new Race();
@@ -82,6 +89,7 @@ class ProjectTestCases {
 		Assert.assertEquals(expected, actual);
 	}
 	
+	@SuppressWarnings("deprecation")
 	@Test
 	void testRaceHalfling() {
 		Race race = new Race();
@@ -93,6 +101,7 @@ class ProjectTestCases {
 		Assert.assertEquals(expected, actual);
 	}
 	
+	@SuppressWarnings("deprecation")
 	@Test
 	void testRaceHuman() {
 		Race race = new Race();
@@ -104,6 +113,7 @@ class ProjectTestCases {
 	}
 	
 	// Tests for the Backgrounds class.
+	@SuppressWarnings("deprecation")
 	@Test
 	void testBackgrounds() {
 		Backgrounds background = new Backgrounds();
@@ -112,6 +122,7 @@ class ProjectTestCases {
 		Assert.assertEquals(expected, actual);
 	}
 	
+	@SuppressWarnings("deprecation")
 	@Test
 	void testBackgroundsCharlatan() {
 		Backgrounds background = new Backgrounds();
@@ -124,6 +135,7 @@ class ProjectTestCases {
 		Assert.assertEquals(expected, actual);
 	}
 	
+	@SuppressWarnings("deprecation")
 	@Test
 	void testBackgroundsEntertainer() {
 		Backgrounds background = new Backgrounds();
@@ -136,6 +148,7 @@ class ProjectTestCases {
 		Assert.assertEquals(expected, actual);
 	}
 	
+	@SuppressWarnings("deprecation")
 	@Test
 	void testBackgroundsHermit() {
 		Backgrounds background = new Backgrounds();
@@ -148,6 +161,7 @@ class ProjectTestCases {
 		Assert.assertEquals(expected, actual);
 	}
 	
+	@SuppressWarnings("deprecation")
 	@Test
 	void testBackgroundsSoldier() {
 		Backgrounds background = new Backgrounds();
@@ -161,6 +175,7 @@ class ProjectTestCases {
 	}
 	
 	// Tests for the Classes class.
+	@SuppressWarnings("deprecation")
 	@Test
 	void testClasses() {
 		Classes classes = new Classes();
@@ -173,6 +188,7 @@ class ProjectTestCases {
 		Assert.assertEquals(expected, actual);
 	}
 	
+	@SuppressWarnings("deprecation")
 	@Test
 	void testClassesBard() {
 		Classes classes = new Classes();
@@ -193,6 +209,7 @@ class ProjectTestCases {
 		Assert.assertEquals(expected, actual);
 	}
 	
+	@SuppressWarnings("deprecation")
 	@Test
 	void testClassesCleric() {
 		Classes classes = new Classes();
@@ -215,6 +232,7 @@ class ProjectTestCases {
 		Assert.assertEquals(expected, actual);
 	}
 	
+	@SuppressWarnings("deprecation")
 	@Test
 	void testClassesFighter() {
 		Classes classes = new Classes();
@@ -236,6 +254,7 @@ class ProjectTestCases {
 		Assert.assertEquals(expected, actual);
 	}
 	
+	@SuppressWarnings("deprecation")
 	@Test
 	void testClassesRogue() {
 		Classes classes = new Classes();

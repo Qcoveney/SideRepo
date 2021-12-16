@@ -60,15 +60,30 @@ public class Insert extends HttpServlet {
       // Set response content type
       response.setContentType("text/html");
       PrintWriter out = response.getWriter();
-      String title = "Insert Data to DB table";
-      String docType = "<!doctype html public \"-//w3c//dtd html 4.0 " + "transitional//en\">\n";
-      out.println(docType + //
-            "<html>\n" + //
-            "<head><title>" + title + "</title></head>\n" + //
-            "<body bgcolor=\"#f0f0f0\">\n" + //
-            "<h2 align=\"center\">" + title + "</h2>\n" + //
-            "<ul>\n" + //
-
+      out.println("<!DOCTYPE html>\n" + 
+    		  "<html>\n" + 
+    		  "\n" + 
+    		  "<head>\n" + 
+    		  "    <meta charset=\"utf-8\">\n" + 
+    		  "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, shrink-to-fit=no\">\n" + 
+    		  "    <title>Successful Creation</title>\n" + 
+    		  "    <link rel=\"stylesheet\" href=\"assets/bootstrap/css/bootstrap.min.css\">\n" + 
+    		  "    <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css?family=Lato:300,400,700\">\n" + 
+    		  "    <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css\">\n" + 
+    		  "</head>\n" + 
+    		  "\n" + 
+    		  "<body style=\"background: var(--bs-gray-800);\">\n" + 
+    		  "    <nav class=\"navbar navbar-light navbar-expand bg-danger navigation-clean\" style=\"background: var(--bs-danger);color: var(--bs-danger);\">\n" + 
+    		  "        <div class=\"container\"><a class=\"navbar-brand link-light\" href=\"/ThisIsFineProject/search.html\" style=\"color: rgba(255,255,255,0.9);\">DnD Builder</a><button data-bs-toggle=\"collapse\" class=\"navbar-toggler\" data-bs-target=\"#navcol-1\"></button>\n" + 
+    		  "            <div class=\"collapse navbar-collapse text-light\" id=\"navcol-1\" style=\"text-align: right;\"><a class=\"btn btn-danger ms-auto\" role=\"button\" href=\"/ThisIsFineProject/search.html\" style=\"border-width: 0px;border-color: var(--bs-gray-900);background: var(--bs-gray-900);\">Search Character</a><a class=\"btn btn-danger\" role=\"button\" href=\"/ThisIsFineProject/insert.html\" style=\"margin-left: 13px;background: var(--bs-gray-900);border-width: 0px;\">Create Character</a></div>\n" + 
+    		  "        </div>\n" + 
+    		  "    </nav>\n" + 
+    		  "    <main class=\"page cv-page\" style=\"background: var(--bs-gray-800);\">\n" + 
+    		  "        <section class=\"portfolio-block block-intro border-bottom\" style=\"height: 144px;\">\n" + 
+    		  "            <h1 class=\"text-center text-white-50\" style=\"height: 46px;font-size: 48px;font-weight: bold;margin-top: 0px;text-decoration: underline;\">Character Created!</h1>\n" + 
+    		  "        </section>\n" + 
+    		  "        <section class=\"text-white-50 portfolio-block block-intro border-bottom\" style=\"margin-right: 40px;margin-left: 40px;\">");
+      	out.println(
             "  <li><b>Character's Name</b>: " + name + "\n" + //
             "  <li><b>Character's Race</b>: " + race + "\n" + //
             "  <li><b>Character's Class</b>: " + characterClass + "\n" + //
@@ -84,10 +99,25 @@ public class Insert extends HttpServlet {
 			"  <li><b>Equipment</b>: " + equipment + "\n" + //
 			"  <li><b>Background</b>: " + background + "\n" + //
 
-            "</ul>\n");
+            "<br><br><br></ul>\n");
 
-      out.println("<a href=/ThisIsFineProject/search.html>Search Data</a> <br>");
-      out.println("</body></html>");
+      out.println("</section>\n" + 
+       		"    </main>\n" + 
+       		"        <footer class=\"bg-light footer\">\n" + 
+       		"        <div class=\"container\">\n" + 
+       		"            <div class=\"row\">\n" + 
+       		"                <div class=\"col-lg-6 text-center text-lg-start my-auto h-100\">\n" + 
+       		"                    <p class=\"text-muted small mb-4 mb-lg-0\">© DnD Builder 2021. All Rights Reserved.</p>\n" + 
+       		"                </div>\n" + 
+       		"            </div>\n" + 
+       		"        </div>\n" + 
+       		"    </footer>" + 
+       		"    <script src=\"assets/bootstrap/js/bootstrap.min.js\"></script>\n" + 
+       		"    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js\"></script>\n" + 
+       		"    <script src=\"assets/js/theme.js\"></script>\n" + 
+       		"</body>\n" + 
+       		"\n" + 
+       		"</html>");
    }
 
    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
